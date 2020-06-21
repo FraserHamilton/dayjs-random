@@ -1,0 +1,12 @@
+{
+  "name": "dayjs-random",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.28"
+  }
+}
