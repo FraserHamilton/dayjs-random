@@ -1,6 +1,6 @@
 {
   "name": "dayjs-random",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.min.js",
   "license": "MIT",
   "author": "Fraser Hamilton",
@@ -15,24 +15,20 @@
     "index.min.js"
   ],
   "scripts": {
-    "build": "babel index.js -d build",
+    "build": "rollup --config",
     "minify": "terser build/index.js --compress --mangle --output index.min.js",
     "build:minify": "yarn build && yarn minify",
     "test": "jest --watch"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest"
-    }
-  },
   "devDependencies": {
-    "@babel/cli": "^7.10.3",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "babel-jest": "^26.1.0",
     "dayjs": "^1.8.28",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
+    "rollup": "^2.18.0",
     "terser": "^4.8.0"
-  }
+  },
+  "dependencies": {}
 }
