@@ -5,6 +5,7 @@
   "module": "index.min.js",
   "license": "MIT",
   "author": "Fraser Hamilton",
+  "description": "Day.js plugin to add support for getting a random date either between two dates, a random date in the future or a random date in the past.",
   "keywords": [
     "day.js",
     "dayjs",
