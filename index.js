@@ -4,6 +4,11 @@ var random = require('./random').extend
 
 dayjs.extend(random)
 
-const now = dayjs.between()
+const from = dayjs()
+const to = from.add(1, 'day')
 
-console.log(now.format())
+const test = dayjs.between(from, to)
+
+const soon = dayjs.soon()
+
+console.log(soon.format())
