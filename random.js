@@ -1,6 +1,6 @@
 const dayjs = require('dayjs')
 
-exports.extend = (dayjsFactory) => {
+exports.extend = (option, dayjsClass, dayjsFactory) => {
   dayjsFactory.between = (from, to) => {
     const fromMilli = dayjs(from).valueOf()
     const max = dayjs(to).valueOf() - fromMilli

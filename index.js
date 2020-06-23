@@ -1,6 +1,6 @@
 var dayjs = require('dayjs')
 
-var random = require('./random').extend
+const random = require('./random').extend
 
 dayjs.extend(random)
 
