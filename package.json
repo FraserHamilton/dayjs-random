@@ -11,6 +11,9 @@
     "randomdates",
     "between"
   ],
+  "files": [
+    "index.min.js"
+  ],
   "scripts": {
     "build": "babel index.js -d build",
     "minify": "terser build/index.js --compress --mangle --output index.min.js",
