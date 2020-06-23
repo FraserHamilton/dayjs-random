@@ -1,14 +1,40 @@
-var dayjs = require('dayjs')
+export default (option, dayjsClass, dayjs) => {
+  dayjs.between = (from, to) => {
+    const fromMilli = dayjs(from).valueOf()
+    const max = dayjs(to).valueOf() - fromMilli
 
-const random = require('./random').extend
+    const dateOffset = Math.floor(Math.random() * max + 1)
 
-dayjs.extend(random)
+    const newDate = dayjs(fromMilli + dateOffset)
 
-const from = dayjs()
-const to = from.add(1, 'day')
+    return dayjs(newDate)
+  }
 
-const test = dayjs.between(from, to)
+  dayjs.soon = (days = 1, refDate = dayjs()) => {
+    const ref = dayjs(refDate)
+    const to = ref.add(days, 'day')
 
-const soon = dayjs.soon()
+    return dayjs.between(ref, to)
+  }
 
-console.log(soon.format())
+  dayjs.recent = (days = 1, refDate = dayjs()) => {
+    const ref = dayjs(refDate)
+    const from = ref.subtract(days, 'day')
+
+    return dayjs.between(from, ref)
+  }
+
+  dayjs.future = (years = 1, refDate = dayjs()) => {
+    const ref = dayjs(refDate)
+    const to = ref.add(years, 'year')
+
+    return dayjs.between(ref, to)
+  }
+
+  dayjs.past = (years = 1, refDate = dayjs()) => {
+    const ref = dayjs(refDate)
+    const from = ref.subtract(years, 'year')
+
+    return dayjs.between(from, ref)
+  }
+}

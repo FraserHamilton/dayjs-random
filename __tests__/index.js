@@ -1,5 +1,5 @@
-const dayjs = require('dayjs')
-const random = require('../random').extend
+import dayjs from 'dayjs'
+import random from '../index'
 
 dayjs.extend(random)
 
