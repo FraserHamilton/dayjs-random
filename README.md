@@ -8,7 +8,7 @@ This is a plugin for [Day.js](https://github.com/iamkun/dayjs) that allows you t
 
 ## Getting Started
 
-The following guide will help you use the plugin with Day.js, and explain the plugins API.
+The following guide will help you install and use this plugin with Day.js
 
 ### Prerequisites
 Day.js installed
