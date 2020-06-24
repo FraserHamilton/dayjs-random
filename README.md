@@ -76,3 +76,34 @@ dayjs().format() // 2020-06-10T11:00:00+01:00
 dayjs.past().format() // returns 2019-09-28T07:29:19+01:00
 ```
 
+## Local Development and Contributing
+
+We are more than happy to accept PRs for bugs, improvements or new features.
+Developing your own changes locally is easy, you just need to clone the repo
+
+```bash
+git clone git@github.com/FraserHamilton/dayjs-random
+
+cd dayjs-random
+```
+
+and install the dependencies with either `npm` or `yarn`
+
+```bash
+npm i
+```
+
+```bash
+yarn
+```
+
+Tests can be ran with the `test` script
+
+```bash
+npm run test
+```
+
+```bash
+yarn test
+```
+
