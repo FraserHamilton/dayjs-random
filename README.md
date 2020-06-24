@@ -2,9 +2,9 @@
 
 This is a plugin for [Day.js](https://github.com/iamkun/dayjs) that allows you to generate random datetimes.
 
-- Get a random datetime between two datetimes
-- Get a random datetime that's coming up or recently occured
-- Get a random datetime from the past or future
+- Get a random dayjs instance between two datetimes
+- Get a random dayjs instance that's coming up or recently occured
+- Get a random dayjs instance that's in the past or future
 
 ## Getting Started
 
