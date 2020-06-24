@@ -1,6 +1,10 @@
 # dayjs-random
 
-This is a plugin for [Day.js](https://github.com/iamkun/dayjs) that allows you to generate random dates using the following methods 
+This is a plugin for [Day.js](https://github.com/iamkun/dayjs) that allows you to generate random datetimes.
+
+- Get random datetime between two datetimes
+- Get random datetime that's coming up or recently occured
+- Get random datetime from the past or future
 
 ## Getting Started
 
@@ -23,11 +27,21 @@ npm install dayjs-random
 
 You will need to import the plugin and activate it via the Day.js `.extend()` function
 
+### ES6
 ```javascript
-import dayjs from 'dayjs';
-import dayjsRandom from 'dayjs-random';
+import dayjs from 'dayjs'
+import dayjsRandom from 'dayjs-random'
 
-dayjs.extend(dayjsRandom);
+dayjs.extend(dayjsRandom)
+```
+
+### Node
+
+```javascript
+const dayjs = require('dayjs')
+const dayjsRandom = require('dayjs-random')
+
+dayjs.extend(dayjsRandom)
 ```
 
 ### between
