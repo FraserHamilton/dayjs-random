@@ -41,18 +41,36 @@ dayjs.between("2020-06-24", "2020-12-15").format() // returns 2020-08-15T02:39:4
 **dayjs.soon(days, refDate)**
 Returns a date sometime between now and N days in the future. If not provided, days will default to 1 and refDate will default to now.
 ```javascript
-dayjs().format() // 2020-06-24T16:44:35+01:00
+dayjs().format() // 2020-06-10T11:00:00+01:00
 
-dayjs.soon().format() // returns 2020-06-25T05:01:21+01:00
+dayjs.soon().format() // returns 2020-06-11T08:23:04+01:00
+
 ```
 
 ### recent
 **dayjs.recent(days, refDate)**
 Returns a date sometime between now and N days ago. If not provided, days will default to 1 and refDate will default to now.
 ```javascript
-dayjs().format() // 2020-06-24T16:47:39+01:00
+dayjs().format() // 2020-06-10T11:00:00+01:00
 
-dayjs.soon().format() // returns 2020-06-23T21:27:07+01:00
+dayjs.recent().format() // retruns 2020-06-09T22:39:59+01:00
 ```
 
+### future
+**dayjs.future(years, refDate)**
+Returns a date sometime between now and N years in the future. If not provided, years will default to 1 and refDate will default to now.
+```javascript
+dayjs().format() // 2020-06-10T11:00:00+01:00
+
+dayjs.future().format() // returns 2020-07-06T12:41:59+01:00
+```
+
+### past
+**dayjs.past(years, refDate)**
+Returns a date sometime between now and N years ago. If not provided, years will default to 1 and refDate will default to now.
+```javascript
+dayjs().format() // 2020-06-10T11:00:00+01:00
+
+dayjs.past().format() // returns 2019-09-28T07:29:19+01:00
+```
 
