@@ -13,6 +13,10 @@
     "randomdates",
     "between"
   ],
+  "repository": {
+    "type": "git",
+    "url": "hhttps://github.com/FraserHamilton/dayjs-random.git"
+  },
   "files": [
     "index.min.js"
   ],
