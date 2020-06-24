@@ -48,9 +48,11 @@ dayjs.extend(dayjsRandom)
 **dayjs.between(Date1, Date2)**
 Returns a date between Date1 and Date2.
 ```javascript
-dayjs.between('2020-06-10', '2030-03-02').format('YYYY-MM-DD') // returns 2026-08-27
+dayjs.between('2020-06-10', '2030-03-02').format('YYYY-MM-DD') 
+// returns 2026-08-27
 
-dayjs.between('2020-06-10T11:00:00+01:00', '2020-06-10T19:00:00+01:00').format() // returns 2020-06-10T15:52:59+01:00
+dayjs.between('2020-06-10T11:00:00+01:00', '2020-06-10T19:00:00+01:00').format()
+// returns 2020-06-10T15:52:59+01:00
 ```
 
 ### soon
