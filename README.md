@@ -11,7 +11,7 @@ This is a plugin for [Day.js](https://github.com/iamkun/dayjs) that allows you t
 The following guide will help you use the plugin with Day.js, and explain the plugins API.
 
 ### Prerequisites
-Day.js version 1.8.x installed
+Day.js installed
 
 ### Installation
 You can install via Yarn or npm
