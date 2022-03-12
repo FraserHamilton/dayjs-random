@@ -1,6 +1,6 @@
 {
   "name": "dayjs-random",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.min.js",
   "module": "index.min.js",
   "license": "MIT",
