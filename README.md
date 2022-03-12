@@ -3,7 +3,7 @@
 This is a plugin for [Day.js](https://github.com/iamkun/dayjs) that allows you to generate random datetimes.
 
 - Get a random dayjs instance between two datetimes
-- Get a random dayjs instance that's coming up or recently occured
+- Get a random dayjs instance that's coming up or recently occurred
 - Get a random dayjs instance that's in the past or future
 
 ## Getting Started
@@ -71,7 +71,7 @@ Returns a date sometime between now and N days ago. If not provided, days will d
 ```javascript
 dayjs().format() // 2020-06-10T11:00:00+01:00
 
-dayjs.recent().format() // retruns 2020-06-09T22:39:59+01:00
+dayjs.recent().format() // returns 2020-06-09T22:39:59+01:00
 ```
 
 ### future
